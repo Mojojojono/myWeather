@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app
+{
+  min-height: 100vh;
+  display: grid;
+  background-image: url(../src/Assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px 820px;
+ 
+}
+
+.weather
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 170px;
+  left: 550px;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.search-bar
+{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* .search-bar button
+{
+    height: 30px;
+    width: 80px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+    border-radius:5px;
+} */
+
+.search-bar input
+{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+    border-radius:5px;
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 25px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.search-bar img
+{
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-bar input ::placeholder
+{
+  color: whitesmoke;
+}
+
+.weather-icon
+{
+  width: 150px;
+  margin: 30px 0px -10px;
+}
+
+.temp
+{
+  
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.location
+{
+  font-size: 30px;
+}
+
+.weather-data
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.weather-data .col
+{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.col img
+{
+    width: 26px;
+    margin-top: 10px;
+}
+
+.col span
+{
+  display: block;
+  font-size: 16px;
+}
